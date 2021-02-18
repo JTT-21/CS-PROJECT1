@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-[Network Diagram](https://github.com/JTT-21/CS-PROJECT1/blob/main/Diagram/Diagrams.drawio)
+[Network Diagram](https://github.com/JTT-21/CS-PROJECT1/blob/main/Diagram/Cloud_NW_project.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -45,7 +45,7 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the host machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: 
 - 45.248.78.204
-- 
+-
 
 Machines within the network can only be accessed by the Jump Box.
 - The Elk VM was access via the Jump Box VM only. Its Public IP address is: 65.52.120.127 
@@ -56,7 +56,7 @@ A summary of the access policies in place can be found in the table below.
 |----------|---------------------|----------------------|
 | Jump Box | Yes                 | 45.248.78.204        |
 | Elk      | Yes                 | 10.0.0.7             |
-| Web VMS  | No                  | 10.0.0.7       |
+| Web VMS  | No                  | 10.0.0.7             |
 
 ### Elk Configuration
 
@@ -80,7 +80,9 @@ This ELK server is configured to monitor the following machines:
 - 10.0.0.8
 - 10.0.0.9
 - 10.0.0.10
+
 We have installed the following Beats on these machines:
+
 - Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
